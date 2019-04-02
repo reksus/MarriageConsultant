@@ -1,0 +1,105 @@
+/*
+Super Generic Reset
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+:root {
+  --color-primary-light: #5EABD4;
+  --color-primary: #297299;
+  --color-primary-dark: #153C51;
+  --color-secondary: #FBF7F9;
+  --color-secondary-dark: #E0B8CC;
+  --color-tertiary-light: #E29CDC;
+  --color-teritiary: #CB4DC1;
+  --color-tertiary-dark: #8A2882;
+  --color-quaternary-light: #FCC2B5;
+  --color-quaternary: #FA927A;
+  --color-quaternary-darj:#F74922;
+  --color-quinary:#AB9BAA;
+  --color-quinary-dark:#7D687C;
+  --margin-main-blocks: 1rem; }
+
+body {
+  background-color: var(--color-secondary);
+  font-size: 1.6rem; }
+
+body > * {
+  border: 1px solid red; }
+
+main > * {
+  border: 2px solid green; }
+
+.header__nav {
+  display: flex;
+  align-items: stretch; }
+
+.header__nav-item {
+  flex: 1 0 auto;
+  justify-self: center;
+  line-height: 2em;
+  text-align: center; }
+
+.main .bio-author {
+  height: 90vh;
+  padding: 1rem;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/VandanaProfilePic.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .main .bio-author__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.header {
+  background-color: var(--color-primary-dark);
+  color: #fff; }
+
+.main {
+  background-color: var(--color-secondary);
+  font-size: 1.6rem; }
+
+.bio-author__name {
+  font-size: 3em;
+  text-transform: uppercase;
+  color: var(--color-quinary-dark); }
+
+.bio-author__other-info span {
+  font-size: 2em; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 2em; }
+
+h4 {
+  font-size: 2em; }
+
+h5 {
+  font-size: 2em; }
+
+h6 {
+  font-size: 2em; }
